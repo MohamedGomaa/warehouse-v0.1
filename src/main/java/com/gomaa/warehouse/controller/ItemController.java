@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.gomaa.warehouse.model.Items;
-import com.gomaa.warehouse.service.ItemService;
+import com.gomaa.warehouse.service.ItemServiceImpl;
 
 @Controller
 public class ItemController {
 	
 	@Autowired
-	private ItemService itemService;
+	private ItemServiceImpl itemService;
 	
 	
 	@GetMapping("/items")
