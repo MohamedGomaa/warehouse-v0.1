@@ -53,7 +53,7 @@ public class ItemController {
 	}
 	
 	@GetMapping("/deleteItem/{id}")
-	public String deleteProduct(@PathVariable(name = "id") int id) {
+	public String deleteItem(@PathVariable(name = "id") int id) {
 		itemService.deleteItem(id);
 		return "redirect:/items";		
 	}
